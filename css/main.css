@@ -34,6 +34,7 @@ body, html {
 	position: absolute;
 	top: 0;
 	width:100%;
+	height: auto;
 	-webkit-transition: height 0.4s ease;
 	-moz-transition: height 0.4s ease;
 	transition: height 0.4s ease;
@@ -117,6 +118,7 @@ body, html {
 }
 
 .experience_card {
+	height:11em;
 	color:black;
 	margin: 2% 0 0 4%;
 }
@@ -132,7 +134,7 @@ body, html {
 @media (max-width: 800px) {
 	.experience_card {
 		width: 45%;
-		height: 10%;
+		height: 11em;
 	}
 	
 	#experience_cards {
@@ -141,7 +143,7 @@ body, html {
 	}
 	
 	#experience {
-		height:400%;	
+		height:300%;	
 	}
 	
 	.experience_card:nth-child(2n + 1) {
@@ -158,5 +160,9 @@ body, html {
 	
 	#header {
 		height: 100%;	
+	}
+	
+	.view_description {
+		width:95%;
 	}
 }
