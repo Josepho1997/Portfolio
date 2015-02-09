@@ -133,7 +133,7 @@ body, html {
 
 @media (max-width: 800px) {
 	.experience_card {
-		width: 45%;
+		width: 90%;
 		height: 11em;
 	}
 	
@@ -143,15 +143,16 @@ body, html {
 	}
 	
 	#experience {
-		height:300%;	
+		height:435%;	
 	}
 	
-	.experience_card:nth-child(2n + 1) {
+	.experience_card {
 		margin-left: 0;
+		margin-top:4%;
 	}
 	
 	.experience_card:nth-child(5) {
-		margin-top:0;
+		margin-top:4%;
 	}
 	
 	.toolbar_image {
