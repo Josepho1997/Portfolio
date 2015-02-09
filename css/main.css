@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;	
+	font-family: RobotoDraft, sans-serif;
+	background-color: #e5e5e5;
+}
+
+#header {
+	position:relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;		
+}
+
+.transparent_toolbar
+{
+	position: absolute;
+	top: 0;
+	width:100%;
+	color:#fff;
+	background-color: transparent;
+	z-index:1000;
+	-webkit-transition: height 0.4s ease;
+	-moz-transition: height 0.4s ease;
+	transition: height 0.4s ease;
+}
+
+/** Set color in html styles **/
+.colored_toolbar {
+	position: absolute;
+	top: 0;
+	width:100%;
+	-webkit-transition: height 0.4s ease;
+	-moz-transition: height 0.4s ease;
+	transition: height 0.4s ease;
+}
+
+/** Provide the image in html using styles **/
+.toolbar_image
+{
+	background-size: cover; 
+	background-position: center;
+	width: 100%; 
+	top: 0; 
+	position: absolute;
+}
+
+.item_view {
+	display: block;
+	position: relative;
+	background-color: #e5e5e5;
+	width: 100%;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.item_view p:first-child {
+	font-size:1.8rem;
+	font-weight: 300;
+	text-align:center;
+	margin-top: 0.7em;
+}
+
+.card {
+	/*display: block;
+	position: relative;
+	background-color: white;
+	width: 80%;
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin: auto;*/
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 8px 12px, rgba(0, 0, 0, 0.0980392) 0px 0px 10px;
+}
+
+#name {
+	font-size:4rem;
+	font-weight:bold;
+	color:white;
+	position:absolute; 
+	width:100%;
+	text-align:center;
+}
+
+#about {
+	overflow:hidden;
+	height:75%;
+	background-color:white;
+}
+
+.view_description {
+	width:70%;
+	text-align:center;
+	margin: 0 auto;
+	line-height:150%;
+}
+
+#experience {
+	overflow:hidden;
+	height:100%;
+	background-color:#2196F3;
+	color:white;
+}
+
+#experience_cards {
+	height:100%;
+	width:90%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.experience_card {
+	color:black;
+	margin: 2% 0 0 4%;
+}
+
+.experience_card:first-child, .experience_card:nth-child(5) {
+	margin-left: 0;	
+}
+
+.experience_card:nth-child(5) {
+	margin-top:10%;	
+}
+
+@media (max-width: 800px) {
+	.experience_card {
+		width: 45%;
+		height: 10%;
+	}
+	
+	#experience_cards {
+		width:100%;	
+		height:100%;
+	}
+	
+	#experience {
+		height:400%;	
+	}
+	
+	.experience_card:nth-child(2n + 1) {
+		margin-left: 0;
+	}
+	
+	.experience_card:nth-child(5) {
+		margin-top:0;
+	}
+	
+	.toolbar_image {
+		height:100%;	
+	}
+	
+	#header {
+		height: 100%;	
+	}
+}
